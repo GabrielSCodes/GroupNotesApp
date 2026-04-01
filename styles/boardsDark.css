@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Inria+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Inria+Serif:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
 body{
     background-color: #730845;
+    margin-top: 138px;
 }
 .nav{
     background-color:#090448;
@@ -55,4 +56,15 @@ body{
 }
 .dark{
     cursor:pointer;
+}
+.top{
+     font-family: "Inria Serif", sans-serif;
+  font-weight: 700;
+  font-style: italic;
+}
+.top p{
+    background-color: #090448;
+    width: fit-content;
+    padding: 15px;
+    color: #FFFBDE;
 }

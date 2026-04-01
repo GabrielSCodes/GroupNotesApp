@@ -1,1 +1,60 @@
 @import url('https://fonts.googleapis.com/css2?family=Inria+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Inria+Serif:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
+body{
+    background-color: #730845;
+    margin-top: 138px;
+    font-family: "Inria Serif", sans-serif;
+    font-weight: 700;
+    font-style: italic;
+}
+.nav{
+    background-color:#090448;
+    font-family: "Inria Serif", sans-serif;
+    font-weight: 700;
+    font-style: italic;
+    color: #FFFBDE;
+    position: absolute; 
+    top: 0;
+    left: 0;
+    width:100%;
+    display:flex;
+    flex-direction:row;
+    align-items:center;
+    height:138px;
+    gap:20px;
+    font-size:24px;
+    justify-content: space-between;
+}
+.google{
+    height:50px;
+    width:210px;
+    display:flex;
+    align-items: center;
+    font-weight:500;
+    font-size:15px;
+    border-radius:10px;
+    border:none;
+}
+.googleicon{
+    height:50px;
+    width:42px;
+    margin-right:10px;
+}
+.join{
+    display:flex;
+    align-items: center;
+    gap:30px;
+}
+.share{
+    font-size:70px;
+}
+.love{
+    color:red;
+}
+.what{
+    width:30px;
+    margin-left:30px;
+}
+.emojis{
+    width:513px;
+    height:925px;
+}

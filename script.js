@@ -2,96 +2,41 @@ import { auth, db } from "./firebase-config.js";
 import { createUserWithEmailAndPassword, signInWithEmailAndPassword, onAuthStateChanged, signOut } from "https://www.gstatic.com/firebasejs/11.0.1/firebase-auth.js";
 import { collection, getDocs, setDoc, deleteDoc, doc, addDoc, serverTimestamp, updateDoc, getDoc } from "https://www.gstatic.com/firebasejs/11.0.1/firebase-firestore.js";
 
-//Dark theme
-document.addEventListener("DOMContentLoaded", () => {
-    const savedTheme = localStorage.getItem("theme");
-    const link = document.getElementById("themeStylesheet");
 
-
-    if (savedTheme === "dark") {
-        link.setAttribute("href", "styles/boardsDark.css");
-    } else if (savedTheme === "light") {
-        link.setAttribute("href", "styles/boards.css");
-    }
-});
-document.addEventListener('DOMContentLoaded', () => {
-    const themeToggle = document.getElementById('toggle');
-
-
-    if (themeToggle) {
-        themeToggle.addEventListener('click', function () {
-            const link = document.getElementById('themeStylesheet');
-
-
-            if (link && link.getAttribute('href').includes('styles/boards.css')) {
-                link.setAttribute('href', 'styles/boardsDark.css');
-                localStorage.setItem("theme", "dark");
-            } else if (link && link.getAttribute('href').includes('styles/boardsDark.css')) {
-                link.setAttribute('href', 'styles/boards.css');
-                localStorage.setItem("theme", "light");
-            }
-        });
-    }
-});
 
 document.addEventListener("DOMContentLoaded", () => {
-    const savedTheme = localStorage.getItem("theme");
-    const link = document.getElementById("themeStylesheet2");
+    const toggle = document.getElementById("toggle");
+    const stylesheets = [
+        document.getElementById("themeStylesheet"),
+        document.getElementById("themeStylesheet2"),
+        document.getElementById("themeStylesheet3")
+    ];
 
+    // Load saved theme
+    let theme = localStorage.getItem("theme") || "light";
+    applyTheme(theme);
 
-    if (savedTheme === "dark") {
-        link.setAttribute("href", "styles/homeDark.css");
-    } else if (savedTheme === "light") {
-        link.setAttribute("href", "styles/home.css");
-    }
-});
-document.addEventListener('DOMContentLoaded', () => {
-    const themeToggle = document.getElementById('toggle');
+    // Toggle theme on click
+    toggle.addEventListener("click", () => {
+        theme = theme === "light" ? "dark" : "light";
+        localStorage.setItem("theme", theme);
+        applyTheme(theme);
+    });
 
+    function applyTheme(mode) {
+        stylesheets.forEach(sheet => {
+            if (!sheet) return;
 
-    if (themeToggle) {
-        themeToggle.addEventListener('click', function () {
-            const link = document.getElementById('themeStylesheet2');
-
-
-            if (link && link.getAttribute('href').includes('styles/home.css')) {
-                link.setAttribute('href', 'styles/homeDark.css');
-                localStorage.setItem("theme", "dark");
-            } else if (link && link.getAttribute('href').includes('styles/homeDark.css')) {
-                link.setAttribute('href', 'styles/home.css');
-                localStorage.setItem("theme", "light");
+            if (mode === "dark") {
+                sheet.setAttribute("href", sheet.getAttribute("href").replace(".css", "Dark.css"));
+            } else {
+                sheet.setAttribute("href", sheet.getAttribute("href").replace("Dark.css", ".css"));
             }
         });
-    }
-});
 
-document.addEventListener("DOMContentLoaded", () => {
-    const savedTheme = localStorage.getItem("theme");
-    const link = document.getElementById("themeStylesheet3");
-
-
-    if (savedTheme === "dark") {
-        link.setAttribute("href", "styles/notesDark.css");
-    } else if (savedTheme === "light") {
-        link.setAttribute("href", "styles/notes.css");
-    }
-});
-document.addEventListener('DOMContentLoaded', () => {
-    const themeToggle = document.getElementById('toggle');
-
-
-    if (themeToggle) {
-        themeToggle.addEventListener('click', function () {
-            const link = document.getElementById('themeStylesheet3');
-
-
-            if (link && link.getAttribute('href').includes('styles/notes.css')) {
-                link.setAttribute('href', 'styles/notesDark.css');
-                localStorage.setItem("theme", "dark");
-            } else if (link && link.getAttribute('href').includes('styles/notesDark.css')) {
-                link.setAttribute('href', 'styles/notes.css');
-                localStorage.setItem("theme", "light");
-            }
-        });
+        // Swap icon
+        toggle.src = mode === "dark"
+            ? "assets/sun/lightB.png"   // show sun in dark mode
+            : "assets/moon/darkB.png";  // show moon in light mode
     }
 });
