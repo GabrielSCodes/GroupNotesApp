@@ -119,6 +119,7 @@ body{
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
     margin:0;
+    padding-top:30px;
 }
 #boardTopic{
     font-family: "Inria Sans", serif;
@@ -135,12 +136,15 @@ body{
     border-bottom-left-radius: 15px;
     border-bottom-right-radius: 15px;
 }
+
 @media screen and (min-width: 800px) and (max-width:1199px){
     .nav{
         height:auto;
     }
     .top{
         flex-direction:column;
+        justify-content:center;
+        align-items:center;
     }
     .top h1{
         font-size:24px;
@@ -171,6 +175,11 @@ height: 70px;
     height:43px;
     font-size:20px;
 }
+.boardList{
+        display:flex;
+        flex-direction:column;
+        align-items:center;
+    }
 }
 @media screen and (max-width:799px){
     .nav{
@@ -178,6 +187,8 @@ height: 70px;
     }
     .top{
         flex-direction:column;
+        justify-content:center;
+        align-items:center;
     }
     .top h1{
         font-size:18px;
@@ -185,11 +196,18 @@ height: 70px;
     #boardJoin, #boardCreate{
         width: 200px;
         height: 35px;
+        display:flex;
+        justify-content:center;
+        align-items:center;
 }
 #boardTopic{
     width: 300px;
     height:150px;
     font-size: 16px;
+    text-align:center;
+}
+#boardTopic::placeholder{
+    text-align:center;
 }
 .boards h2{
     width:300px;
@@ -213,5 +231,11 @@ height: 70px;
     }
     .mid{
         font-size: 10px;
+    }    
+    .boardList{
+        display:flex;
+        flex-direction:column;
+        align-items:center;
     }
-}
+    
+    }
