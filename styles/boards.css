@@ -19,6 +19,7 @@ body{
   height:138px;
   gap:20px;
   justify-content:space-between;
+  z-index: 1000;
 }
 .left{
     display:flex;
@@ -134,5 +135,83 @@ body{
     border-bottom-left-radius: 15px;
     border-bottom-right-radius: 15px;
 }
-
-    
+@media screen and (min-width: 800px) and (max-width:1199px){
+    .nav{
+        height:auto;
+    }
+    .top{
+        flex-direction:column;
+    }
+    .top h1{
+        font-size:24px;
+    }
+    #boardJoin, #boardCreate{
+        width: 400px;
+        height: 50px;
+}
+#boardTopic{
+    width: 400px;
+    height:200px;
+    font-size: 18px;
+}
+.boards h2{
+    width:400px;
+    font-size: 24px;
+}
+.nav img{
+width:70px;
+height: 70px;
+}
+.nav .dark{
+    height: 50px;
+    width:50px;
+}
+.logout{
+    width:105px;
+    height:43px;
+    font-size:20px;
+}
+}
+@media screen and (max-width:799px){
+    .nav{
+        height: auto;
+    }
+    .top{
+        flex-direction:column;
+    }
+    .top h1{
+        font-size:18px;
+    }
+    #boardJoin, #boardCreate{
+        width: 200px;
+        height: 35px;
+}
+#boardTopic{
+    width: 300px;
+    height:150px;
+    font-size: 16px;
+}
+.boards h2{
+    width:300px;
+    font-size: 20px;
+}
+.nav img{
+    width:45px;
+    height: 45px;
+    }
+    .logout{
+        width:67px;
+        height:28px;
+        font-size:12px;
+    }
+    .right{
+        display:flex;
+        flex-direction:column;
+    }
+    .nav h2{
+        font-size: 12px;
+    }
+    .mid{
+        font-size: 10px;
+    }
+}
