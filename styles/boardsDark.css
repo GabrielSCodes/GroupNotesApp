@@ -61,10 +61,76 @@ body{
      font-family: "Inria Serif", sans-serif;
   font-weight: 700;
   font-style: italic;
+  display:flex;
+  flex-direction:row;
+  justify-content: space-around;
 }
-.top p{
+.top h1{
+    font-size:32px;
+    text-align:center;
+    color:white;
+}
+#boardJoin{
+    font-family: "Inria Sans", serif;
+    font-weight: 700;
+    font-style: italic;
     background-color: #090448;
     width: fit-content;
     padding: 15px;
     color: #FFFBDE;
+    border:none;
+    outline: none;
+    width: 450px;
+    height:60px;
+    font-size: 16px;
+}
+#boardCreate{
+    font-family: "Inria Sans", serif;
+    font-weight: 700;
+    font-style: italic;
+    background-color: #090448;
+    width: fit-content;
+    padding: 15px;
+    color: #FFFBDE;
+    border:none;
+    outline: none;
+    width: 450px;
+    height:60px;
+    font-size: 16px;
+}
+.boards h1{
+    font-family: "Inria Serif", sans-serif;
+    font-weight: 700;
+    font-style: italic;
+    text-align:center;
+    color: white;
+}
+.boards h2{
+      font-family: "Inria Sans", serif;
+    font-weight: 700;
+    font-style: italic;
+    color: #FFFBDE;
+    font-size: 32px;
+    background-color: #072878;
+    width: 450px;
+    height: 60px;
+    text-align:center;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    margin:0;
+}
+#boardTopic{
+    font-family: "Inria Sans", serif;
+    font-weight: 700;
+    font-style: normal;
+    background-color: #090448;
+    border:none;
+    width:450px;
+    height: 250px;
+    padding: 15px 0px;
+    font-size: 20px;
+    outline: none;
+    color:white;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
 }

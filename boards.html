@@ -27,15 +27,25 @@
             <div class="top">
                 <div class="join"> 
               <h1>Join Existing Board</h1>
-              <p> Enter id: ahfuou38320uoah </p>
+              <form id="joinForm">
+                <input type="text" id="boardJoin" name="boardJoin" placeholder="Enter Board ID:" required>
+            </form>
               </div>
               <div class="create">
               <h1> Create a new Board</h1>
-              <p> Enter Name: ADV_25_26 Project </p>
+                <form id="createForm">
+                <input type="text" id="boardCreate" name="boardCreate" placeholder="Enter Board Name:" required>
+            </form>
                 </div>
             </div>
             <div class="boards">
                 <h1>There are No Boards to show</h1>
+                <div class="boardList"> 
+                    <h2> Inputted Name </h2>
+                     <form id="boardText">
+                <input type="text" id="boardTopic" name="boardTopic" placeholder="Enter Discussion Topic:" required>
+            </form>
+                </div>
             </div>
         <script type="module" src="script.js" ></script>
     </body>
