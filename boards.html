@@ -20,7 +20,9 @@
             <p>Placholder@gmail.com</p>
             </div>
             <div class="right">
-            <button class="logout"> Logout </button>
+            <form action="home.html">
+    <button type="submit" class="logout">Logout</button>
+</form>
             <img src="assets/moon/darkB.png" alt="darkToggle" class="dark" id="toggle">
             </div>
         </nav>
@@ -40,11 +42,19 @@
             </div>
             <div class="boards">
                 <h1>There are No Boards to show</h1>
-                <div class="boardList"> 
+                <div class="boardList">
+                    <div>
                     <h2> Inputted Name </h2>
                      <form id="boardText">
                 <input type="text" id="boardTopic" name="boardTopic" placeholder="Enter Discussion Topic:" required>
             </form>
+            </div> 
+            <div>
+             <h2> Inputted Name </h2>
+                     <form id="boardText">
+                <input type="text" id="boardTopic" name="boardTopic" placeholder="Enter Discussion Topic:" required>
+            </form>
+            </div>
                 </div>
             </div>
         <script type="module" src="script.js" ></script>

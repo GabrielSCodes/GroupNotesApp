@@ -54,6 +54,7 @@ body{
     height:58px;
     font-size:24px;
     color:black;
+    cursor:pointer;
 }
 .dark{
     cursor:pointer;
@@ -135,6 +136,12 @@ body{
     color:black;
     border-bottom-left-radius: 15px;
     border-bottom-right-radius: 15px;
+    text-align:center;
+}
+.boardList{
+    display: flex;
+    flex-direction:row;
+    justify-content:space-around;
 }
 
 @media screen and (min-width: 800px) and (max-width:1199px){
@@ -157,16 +164,17 @@ body{
     width: 400px;
     height:200px;
     font-size: 18px;
+    text-align:center;
 }
 .boards h2{
     width:400px;
     font-size: 24px;
 }
-.nav img{
+.logo{
 width:70px;
 height: 70px;
 }
-.nav .dark{
+.dark{
     height: 50px;
     width:50px;
 }
@@ -179,11 +187,12 @@ height: 70px;
         display:flex;
         flex-direction:column;
         align-items:center;
+        gap:20px;
     }
 }
 @media screen and (max-width:799px){
     .nav{
-        height: auto;
+        height: 75px;
     }
     .top{
         flex-direction:column;
@@ -194,7 +203,7 @@ height: 70px;
         font-size:18px;
     }
     #boardJoin, #boardCreate{
-        width: 200px;
+        width: 300px;
         height: 35px;
         display:flex;
         justify-content:center;
@@ -213,7 +222,7 @@ height: 70px;
     width:300px;
     font-size: 20px;
 }
-.nav img{
+.logo{
     width:45px;
     height: 45px;
     }
@@ -221,10 +230,6 @@ height: 70px;
         width:67px;
         height:28px;
         font-size:12px;
-    }
-    .right{
-        display:flex;
-        flex-direction:column;
     }
     .nav h2{
         font-size: 12px;
@@ -236,6 +241,11 @@ height: 70px;
         display:flex;
         flex-direction:column;
         align-items:center;
+        gap:20px;
+    }
+    .dark{
+        width: 30px;
+        height: 30px;
     }
     
     }
