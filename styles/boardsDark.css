@@ -162,7 +162,7 @@ body{
     font-style: italic;
     color: white;
     font-size: 32px;
-    background-color: #749BC2;
+    background-color: #072878;
     width: 450px;
     height: 60px;
     text-align:center;
@@ -175,14 +175,14 @@ body{
     font-family: "Inria Sans", serif;
     font-weight: 700;
     font-style: normal;
-    background-color: #FFFBDE;
+    background-color: #090448;
     border:none;
     width:450px;
     height: 250px;
     padding: 15px 0px;
     font-size: 20px;
     outline: none;
-    color:black;
+    color:white;
     border-bottom-left-radius: 15px;
     border-bottom-right-radius: 15px;
     text-align:center;

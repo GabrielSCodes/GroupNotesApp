@@ -16,7 +16,7 @@ body{
   display:flex;
   flex-direction:row;
   align-items:center;
-  height:138px;
+  height:130px;
   gap:20px;
   justify-content:space-between;
 }
@@ -43,8 +43,8 @@ body{
     align-items:center;
 }
 .back-section {
-    text-align: left;
-    margin: 10px 20px;
+    text-align: center;
+    margin-top: 20px;
 }
 .user-image {
     width: 60px;
@@ -152,3 +152,154 @@ body{
     font-size:24px;
     color:black;
 }
+.logout{
+     font-family: "Inria Serif", sans-serif;
+    font-weight: 700;
+    font-style: italic;
+    background-color:#FFFBDE;
+    border-radius:20px;
+    border:none;
+    width:150px;
+    height:58px;
+    font-size:24px;
+    color:black;
+    cursor:pointer;
+}
+.back-button{
+      font-family: "Inria Sans", serif;
+    font-weight: 700;
+    font-style: italic;
+    background-color:#FFFBDE;
+    border-radius:20px;
+    border:none;
+    width:150px;
+    height:58px;
+    font-size:16px;
+    color:black;
+    cursor:pointer;
+    align-self:center;
+}
+.notes h1{
+     font-family: "Inria Serif", sans-serif;
+    font-weight: 700;
+    font-style: italic;
+    text-align:center
+}
+@media screen and (min-width: 800px) and (max-width:1199px){
+    .nav{
+        height:auto;
+    }
+    .top{
+        flex-direction:column;
+        justify-content:center;
+        align-items:center;
+    }
+    .top h1{
+        font-size:24px;
+    }
+    #boardJoin, #boardCreate{
+        width: 400px;
+        height: 50px;
+}
+.board-button{
+    height:80px;
+}
+#boardTopic{
+    width: 400px;
+    height:200px;
+    font-size: 18px;
+    text-align:center;
+}
+.boards h2{
+    width:400px;
+    font-size: 24px;
+}
+.logo{
+width:70px;
+height: 70px;
+}
+.dark{
+    height: 50px;
+    width:50px;
+}
+.logout{
+    width:105px;
+    height:43px;
+    font-size:20px;
+}
+.boardList{
+        display:flex;
+        flex-direction:column;
+        align-items:center;
+        gap:20px;
+    }
+    .user-image{
+        width: 48px;
+    height: 48px;
+    }
+}
+@media screen and (max-width:799px){
+    .nav{
+        height: 75px;
+    }
+    .top{
+        flex-direction:column;
+        justify-content:center;
+        align-items:center;
+    }
+    .top h1{
+        font-size:18px;
+    }
+    #boardJoin, #boardCreate{
+        width: 300px;
+        height: 35px;
+        display:flex;
+        justify-content:center;
+        align-items:center;
+}
+#boardTopic{
+    width: 300px;
+    height:150px;
+    font-size: 16px;
+    text-align:center;
+}
+.board-button{
+    height:65px;
+}
+#boardTopic::placeholder{
+    text-align:center;
+}
+.boards h2{
+    width:300px;
+    font-size: 20px;
+}
+.logo{
+    width:45px;
+    height: 45px;
+    }
+    .logout{
+        width:67px;
+        height:28px;
+        font-size:12px;
+    }
+    .nav h2{
+        font-size: 12px;
+    }
+    .mid{
+        font-size: 10px;
+    }    
+    .boardList{
+        display:flex;
+        flex-direction:column;
+        align-items:center;
+        gap:20px;
+    }
+    .dark{
+        width: 30px;
+        height: 30px;
+    }
+    .user-image{
+        width: 48px;
+    height: 48px;
+    }
+    }
