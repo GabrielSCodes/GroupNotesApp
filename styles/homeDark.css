@@ -53,8 +53,56 @@ body{
 .what{
     width:30px;
     margin-left:30px;
+    position:absolute;
 }
 .emojis{
     width:513px;
     height:925px;
+}
+.friends{
+    width:555px;
+    height:740px;
+    position:absolute;
+    z-index: -1;
+    margin-left:10%;
+    margin-top:9%;
+}
+.title{
+    font-size:48px;
+}
+.position2{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    margin-left: 35%;
+}
+.paragraphPos{
+    width: 500px;
+    text-align: center;
+    font-size: 24px;
+}
+.position3{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    margin-left: 35%;
+    margin-top:10%;
+}
+.white{
+    background-color:white;
+    width:468px;
+    height:166px;
+    border-radius:182px;
+    display:flex;
+    flex-direction:row;
+    align-items:center;
+    justify-content: center;
+    gap:10%;
+}
+.reposition{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content: center;
+    line-height: 0px;
 }
