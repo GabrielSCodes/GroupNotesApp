@@ -210,10 +210,6 @@ body{
         justify-content:center;
         align-items:center;
     }
-    .board-button {
-    height: 65px;
-    width: 85px;
-    }
     .top h1{
         font-size:24px;
     }

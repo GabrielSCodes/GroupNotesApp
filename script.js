@@ -31,13 +31,17 @@ function applyTheme(mode) {
         document.getElementById("themeStylesheet3")
     ];
 
+    const normalizedMode = mode === "dark" ? "dark" : "light";
+    localStorage.setItem("theme", normalizedMode);
+
     stylesheets.forEach(sheet => {
         if (!sheet) return;
 
-        if (mode === "dark") {
-            sheet.setAttribute("href", sheet.getAttribute("href").replace(".css", "Dark.css"));
+        const href = sheet.getAttribute("href");
+        if (normalizedMode === "dark") {
+            sheet.setAttribute("href", href.replace(/\.css$/, "Dark.css"));
         } else {
-            sheet.setAttribute("href", sheet.getAttribute("href").replace("Dark.css", ".css"));
+            sheet.setAttribute("href", href.replace(/Dark\.css$/, ".css"));
         }
     });
 }
@@ -51,7 +55,6 @@ function setupThemeToggle() {
 
     toggle.addEventListener("click", () => {
         theme = theme === "light" ? "dark" : "light";
-        localStorage.setItem("theme", theme);
         applyTheme(theme);
         toggle.src = theme === "dark"
             ? "assets/sun/lightB.png"
