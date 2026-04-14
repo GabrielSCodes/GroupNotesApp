@@ -249,6 +249,10 @@ height: 70px;
         align-items:center;
         gap:20px;
     }
+    .user-image{
+        width: 48px;
+    height: 48px;
+    }
 }
 @media screen and (max-width:799px){
     .nav{
@@ -310,5 +314,8 @@ height: 70px;
         width: 30px;
         height: 30px;
     }
-    
+    .user-image{
+        width: 48px;
+    height: 48px;
+    }
     }

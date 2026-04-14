@@ -60,9 +60,11 @@ body{
     font-weight: 700;
     font-style: italic;
     cursor: pointer;
-    height: 40px;
-    width: 80px;
-    margin-left: 10px;
+    height: 50px;
+    width: 90px;
+    margin-top: 10px;
+    margin-left: 5px;
+    border-radius:5px;
 }
 .board-info {
     text-align: center;
