@@ -63,8 +63,8 @@ body{
     font-weight: 700;
     font-style: italic;
     cursor: pointer;
-    height: 65px;
-    width: 85px;
+    height: 90px;
+    width: 110px;
 }
 .board-card {
     background-color: #FFFBDE;
@@ -210,7 +210,10 @@ body{
         justify-content:center;
         align-items:center;
     }
-    
+    .board-button {
+    height: 65px;
+    width: 85px;
+    }
     .top h1{
         font-size:24px;
     }

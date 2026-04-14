@@ -8,7 +8,7 @@ body{
     font-family: "Inria Serif", sans-serif;
   font-weight: 700;
   font-style: italic;
-  color: #FFFBDE;
+  color: white;
   position: absolute; 
   top: 0;
   left: 0;
@@ -125,10 +125,10 @@ body{
     font-family: "Inria Sans", serif;
     font-weight: 700;
     font-style: italic;
-    background-color: #FFFBDE;
+    background-color: #090448;
     width: fit-content;
     padding: 15px;
-    color: #4682A9;
+    color: white;
     border:none;
     outline: none;
     width: 450px;
@@ -139,10 +139,10 @@ body{
     font-family: "Inria Sans", serif;
     font-weight: 700;
     font-style: italic;
-    background-color: #FFFBDE;
+    background-color: #090448;
     width: fit-content;
     padding: 15px;
-    color: #4682A9;
+    color: white;
     border:none;
     outline: none;
     width: 450px;
@@ -154,7 +154,7 @@ body{
     font-weight: 700;
     font-style: italic;
     text-align:center;
-    color: black;
+    color: white;
 }
 .boards h2{
       font-family: "Inria Sans", serif;
