@@ -80,8 +80,8 @@ function setupGoogleSignIn() {
 
 function setupNavbar(user) {
     const userAvatar = document.getElementById("userAvatar");
-    const userNameField = document.querySelector(".mid p:first-child");
-    const userEmailField = document.querySelector(".mid p:nth-child(2)");
+    const userNameField = document.querySelector(".mid p:nth-of-type(1)");
+    const userEmailField = document.querySelector(".mid p:nth-of-type(2)");
     const logoutButton = document.getElementById("logoutButton");
 
     if (userAvatar) {
