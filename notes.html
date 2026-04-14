@@ -4,11 +4,11 @@
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Group Notes App</title>
+        <title>Notes</title>
         <link id="themeStylesheet3" href="styles/notes.css" rel="stylesheet">
     </head>
     <body>
-        <div class="nav">
+        <nav class="nav">
             
             <div class="left">
             <img src="assets/logo/logoB.png" alt="logo" class="logo">
@@ -16,14 +16,34 @@
             </div>
             
             <div class="mid">
-            <p>John Doe</p>
-            <p>Placholder@gmail.com</p>
-        </div>
+                <img id="userAvatar" src="assets/user/default.png" alt="User avatar" class="user-image">
+                <p>John Doe</p>
+                <p>Placholder@gmail.com</p>
+            </div>
             <div class="right">
-            <button class="logout"> Logout </button>
-            <img src="assets/moon/darkB.png" alt="darkToggle" class="dark" id="toggle">
+                <button type="button" id="logoutButton" class="logout">Logout</button>
+                <img src="assets/moon/darkB.png" alt="darkToggle" class="dark" id="toggle">
             </div>
+        </nav>
+        <div class="back-section">
+            <button type="button" onclick="window.location.href='boards.html'" class="back-button">Back to Boards</button>
+        </div>
+        <div class="board-info">
+            <p id="boardCreated">Created X time ago</p>
+            <p id="boardId">Board ID: </p>
+            <h1 id="boardTitle">Board Title</h1>
+        </div>
+        <div class="add-note">
+            <button id="addNoteButton" class="board-button">Add Note</button>
+            <div id="noteInputContainer" style="display: none;">
+                <textarea id="noteContent" placeholder="Type your note here..." rows="4"></textarea>
+                <button id="postNoteButton" class="board-button">Post</button>
             </div>
+        </div>
+        <div class="notes">
+            <h1>Notes</h1>
+            <div id="notesList"></div>
+        </div>
         <script type="module" src="script.js"></script>
     </body>
 </html>

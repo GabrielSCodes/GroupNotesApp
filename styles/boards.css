@@ -35,6 +35,11 @@ body{
     flex-direction:column;
     justify-content:center;
 }
+.user-image {
+    width: 60px;
+    height: 60px;
+    border-radius: 50px;
+}
 .mid p{
     margin:0;
 }
@@ -42,6 +47,45 @@ body{
     display:flex;
     flex-direction:row;
     align-items:center;
+}
+.board-button {
+    background-color: #4682A9;
+    color: #FFFBDE;
+    border: none;
+    padding: 10px;
+    font-family: "Inria Serif", sans-serif;
+    font-weight: 700;
+    font-style: italic;
+    cursor: pointer;
+    height: 40px;
+    width: 80px;
+    margin-left: 10px;
+}
+.board-card {
+    background-color: #FFFBDE;
+    border: 2px solid #4682A9;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 10px;
+    cursor: pointer;
+    font-family: "Inria Sans", serif;
+    font-weight: 400;
+}
+.board-card h2 {
+    margin: 0 0 10px 0;
+}
+.board-card p {
+    margin: 0;
+}
+.delete-button {
+    background-color: #ff4d4d;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 12px;
+    margin-top: 10px;
 }
 .logout{
     font-family: "Inria Serif", sans-serif;
