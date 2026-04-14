@@ -63,9 +63,8 @@ body{
     font-weight: 700;
     font-style: italic;
     cursor: pointer;
-    height: 40px;
-    width: 80px;
-    margin-left: 10px;
+    height: 65px;
+    width: 85px;
 }
 .board-card {
     background-color: #FFFBDE;
@@ -192,6 +191,14 @@ body{
     display: flex;
     flex-direction:row;
     justify-content:space-around;
+}
+#joinForm{
+    display:flex;
+    gap:0px;
+}
+#createForm{
+    display:flex;
+    gap:0px;
 }
 
 @media screen and (min-width: 800px) and (max-width:1199px){
