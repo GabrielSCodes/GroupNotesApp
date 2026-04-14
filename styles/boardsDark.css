@@ -8,7 +8,7 @@ body{
     font-family: "Inria Serif", sans-serif;
   font-weight: 700;
   font-style: italic;
-  color: white;
+  color: #FFFBDE;
   position: absolute; 
   top: 0;
   left: 0;
@@ -32,8 +32,19 @@ body{
     font-weight: 700;
     font-style: normal;
     display:flex;
+    flex-direction:row;
+    justify-content:center;
+    gap:10px;
+}
+.userInfo{
+    display:flex;
     flex-direction:column;
     justify-content:center;
+}
+.user-image {
+    width: 60px;
+    height: 60px;
+    border-radius: 50px;
 }
 .mid p{
     margin:0;
@@ -43,17 +54,56 @@ body{
     flex-direction:row;
     align-items:center;
 }
+.board-button {
+    background-color: #4682A9;
+    color: #FFFBDE;
+    border: none;
+    padding: 10px;
+    font-family: "Inria Serif", sans-serif;
+    font-weight: 700;
+    font-style: italic;
+    cursor: pointer;
+    height: 40px;
+    width: 80px;
+    margin-left: 10px;
+}
+.board-card {
+    background-color: #FFFBDE;
+    border: 2px solid #4682A9;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 10px;
+    cursor: pointer;
+    font-family: "Inria Sans", serif;
+    font-weight: 400;
+}
+.board-card h2 {
+    margin: 0 0 10px 0;
+}
+.board-card p {
+    margin: 0;
+}
+.delete-button {
+    background-color: #ff4d4d;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 12px;
+    margin-top: 10px;
+}
 .logout{
     font-family: "Inria Serif", sans-serif;
     font-weight: 700;
     font-style: italic;
-    background-color:#A00129;
+    background-color:#FFFBDE;
     border-radius:20px;
     border:none;
     width:150px;
     height:58px;
     font-size:24px;
-    color:white;
+    color:black;
     cursor:pointer;
 }
 .dark{
@@ -70,16 +120,16 @@ body{
 .top h1{
     font-size:32px;
     text-align:center;
-    color:white;
+    color:black;
 }
 #boardJoin{
     font-family: "Inria Sans", serif;
     font-weight: 700;
     font-style: italic;
-    background-color: #090448;
+    background-color: #FFFBDE;
     width: fit-content;
     padding: 15px;
-    color: #FFFBDE;
+    color: #4682A9;
     border:none;
     outline: none;
     width: 450px;
@@ -90,10 +140,10 @@ body{
     font-family: "Inria Sans", serif;
     font-weight: 700;
     font-style: italic;
-    background-color: #090448;
+    background-color: #FFFBDE;
     width: fit-content;
     padding: 15px;
-    color: #FFFBDE;
+    color: #4682A9;
     border:none;
     outline: none;
     width: 450px;
@@ -105,15 +155,15 @@ body{
     font-weight: 700;
     font-style: italic;
     text-align:center;
-    color: white;
+    color: black;
 }
 .boards h2{
       font-family: "Inria Sans", serif;
     font-weight: 700;
     font-style: italic;
-    color: #FFFBDE;
+    color: white;
     font-size: 32px;
-    background-color: #072878;
+    background-color: #749BC2;
     width: 450px;
     height: 60px;
     text-align:center;
@@ -126,14 +176,14 @@ body{
     font-family: "Inria Sans", serif;
     font-weight: 700;
     font-style: normal;
-    background-color: #090448;
+    background-color: #FFFBDE;
     border:none;
     width:450px;
     height: 250px;
     padding: 15px 0px;
     font-size: 20px;
     outline: none;
-    color:white;
+    color:black;
     border-bottom-left-radius: 15px;
     border-bottom-right-radius: 15px;
     text-align:center;
@@ -187,7 +237,7 @@ height: 70px;
         display:flex;
         flex-direction:column;
         align-items:center;
-        gap: 20px;
+        gap:20px;
     }
 }
 @media screen and (max-width:799px){
@@ -203,7 +253,7 @@ height: 70px;
         font-size:18px;
     }
     #boardJoin, #boardCreate{
-        width: 200px;
+        width: 300px;
         height: 35px;
         display:flex;
         justify-content:center;

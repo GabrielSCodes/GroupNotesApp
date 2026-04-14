@@ -89,7 +89,8 @@ body{
     margin-top:10%;
 }
 .white{
-    background-color:white;
+    background-color:black;
+    color: #FFFBDE;
     width:468px;
     height:166px;
     border-radius:182px;
