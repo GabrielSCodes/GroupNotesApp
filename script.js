@@ -202,8 +202,8 @@ function displayBoards(boards) {
             window.location.href = `notes.html?boardId=${board.id}`;
         });
         if (isCreator) {
-            card.querySelector(".delete-button").addEventListener("click", () => {
-                deleteBoard(board.id);
+            card.querySelector(".delete-button").addEventListener("click", async () => {
+                await deleteBoard(board.id);
             });
         }
         boardList.appendChild(card);
@@ -398,6 +398,11 @@ async function deleteBoard(boardId) {
     try {
         await deleteDoc(doc(db, "boards", boardId));
         console.log("Board deleted: ", boardId);
+        if (auth.currentUser) {
+            await loadBoards(auth.currentUser);
+        } else {
+            window.location.reload();
+        }
     } catch (error) {
         console.error("Error deleting board:", error);
     }

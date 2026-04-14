@@ -1,14 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Inria+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Inria+Serif:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
 body{
-    background-color: #730845;
+    background-color: #91C8E4;
     margin-top: 138px;
 }
 .nav{
-    background-color:#090448;
+    background-color:#4682A9;
     font-family: "Inria Serif", sans-serif;
   font-weight: 700;
   font-style: italic;
-  color: white;
+  color: #FFFBDE;
   position: absolute; 
   top: 0;
   left: 0;
@@ -42,15 +42,111 @@ body{
     flex-direction:row;
     align-items:center;
 }
-.logout{
+.back-section {
+    text-align: left;
+    margin: 10px 20px;
+}
+.user-image {
+    width: 60px;
+    height: 60px;
+    border-radius: 50px;
+}
+.board-button {
+    background-color: #4682A9;
+    color: #FFFBDE;
+    border: none;
+    padding: 10px;
     font-family: "Inria Serif", sans-serif;
     font-weight: 700;
     font-style: italic;
-    background-color:#A00129;
-    border-radius:20px;
+    cursor: pointer;
+    height: 40px;
+    width: 80px;
+    margin-left: 10px;
+}
+.board-info {
+    text-align: center;
+    margin: 20px 0;
+    font-family: "Inria Sans", serif;
+}
+.add-note {
+    text-align: center;
+    margin: 20px 0;
+}
+#noteInputContainer {
+    margin-top: 10px;
+}
+#noteContent {
+    width: 80%;
+    padding: 10px;
+    font-family: "Inria Sans", serif;
+}
+.notes {
+    margin: 20px;
+}
+.note-card {
+    background-color: #FFFBDE;
+    border: 2px solid #4682A9;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 10px 0;
+    font-family: "Inria Sans", serif;
+}
+.note-card p {
+    margin: 5px 0;
+}
+.note-header, .comment-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+.note-avatar, .comment-avatar {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+.note-user, .comment-user {
+    font-weight: bold;
+    font-size: 14px;
+}
+.delete-button {
+    background-color: #ff4d4d;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 12px;
+    margin-left: auto;
+}
+.reactions {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+}
+.reaction {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    padding: 5px;
+    border-radius: 5px;
+    background-color: #f0f0f0;
+}
+.reaction:hover {
+    background-color: #e0e0e0;
+}
+.comment-section {
+    margin-top: 10px;
+}
+.comment {
+    background-color: #f9f9f9;
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 5px;
     border:none;
     width:150px;
     height:58px;
     font-size:24px;
-    color:white;
+    color:black;
 }

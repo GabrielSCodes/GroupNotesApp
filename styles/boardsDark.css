@@ -55,7 +55,7 @@ body{
     align-items:center;
 }
 .board-button {
-    background-color: #4682A9;
+    background-color: #072878;
     color: #FFFBDE;
     border: none;
     padding: 10px;
@@ -68,7 +68,7 @@ body{
 }
 .board-card {
     background-color: #FFFBDE;
-    border: 2px solid #4682A9;
+    border: 2px solid #072878;
     border-radius: 10px;
     padding: 20px;
     margin: 10px;
@@ -96,13 +96,13 @@ body{
     font-family: "Inria Serif", sans-serif;
     font-weight: 700;
     font-style: italic;
-    background-color:#FFFBDE;
+    background-color:#A00129;
     border-radius:20px;
     border:none;
     width:150px;
     height:58px;
     font-size:24px;
-    color:black;
+    color:white;
     cursor:pointer;
 }
 .dark{
